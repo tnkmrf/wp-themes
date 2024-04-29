@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth!important;
+}
+.normal-width {
+  width: 88%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}

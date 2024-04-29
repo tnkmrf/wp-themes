@@ -1,0 +1,70 @@
+@import url('utils.less');
+
+article{
+    background-color: #F8F8F8;
+}
+.post-header{
+    width: 100%;
+    background-color: #202124;
+    color: #fff;
+
+
+    .post-details{
+        width: 88%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 200px;
+        h1{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-size: 96px;
+            line-height: 110%;
+           
+            margin-bottom: 24px;
+            
+        }
+        .category-link{
+            color: #fff;
+            text-decoration: none;
+            padding-bottom: 6px;
+            font-size: 20px;       
+            background-repeat: no-repeat;
+            transition: all ease 0.3s;
+            border: solid 2px #fff;
+            border-radius: 24px;
+            padding: 5px 10px;
+            &:hover{
+            background: #fff;
+            color: #202124;
+        
+            }
+        }
+    }
+    padding-bottom: 100px;
+}
+
+.post-thumb{
+    width: 88%;
+    max-width: 1400px;
+    aspect-ratio: 2/1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 100px;
+
+    z-index: 1;
+   
+img{
+ 
+    width: 100%;
+    object-fit: cover;
+}
+}
+.post-content{
+  
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 18px;
+}
