@@ -7,6 +7,9 @@ function master_theme_enqueue_styles(){
     wp_enqueue_style('mt-util',esc_url(get_stylesheet_directory_uri()).'/styles/nav.css');
     wp_enqueue_style('mt-util',esc_url(get_stylesheet_directory_uri()).'/styles/utils.css');
     wp_enqueue_style('mt-posts',esc_url(get_stylesheet_directory_uri()).'/styles/posts.css');
+
+    wp_enqueue_script('gsap', esc_url(get_template_directory_uri()).'/scripts/gsap.min.js');
+    wp_enqueue_script('scrolltrigger', esc_url(get_template_directory_uri()).'/scripts/scrolltrigger.min.js');
     wp_enqueue_script('tools', esc_url(get_template_directory_uri()).'/scripts/tools.js');
 
 }

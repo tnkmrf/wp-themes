@@ -1,7 +1,7 @@
 <header>
     <div class="nav-container">
         <nav>
-            <div class = "nav-logo"><img src="" alt="logo"></div>
+            <a class = "nav-logo" href ="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri()?>/resources/img/icons/altlogo.svg" alt="logo"></a>
             <div class = "nav-collapse">
                <?php
                wp_nav_menu(

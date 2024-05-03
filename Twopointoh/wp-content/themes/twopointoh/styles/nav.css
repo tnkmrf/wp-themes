@@ -10,6 +10,7 @@ header nav {
   background-color: #e9e9e9c4;
   backdrop-filter: blur(10px);
   display: flex;
+  align-content: center;
   gap: 20px;
   padding: 10px 10px;
   width: fit-content;
@@ -18,6 +19,14 @@ header nav {
   font-size: 16px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
+}
+header nav .nav-logo {
+  width: 40px;
+  display: flex;
+}
+header nav .nav-logo img {
+  width: 100%;
+  height: auto;
 }
 header nav .nav-collapse {
   display: flex;
@@ -38,7 +47,7 @@ header nav .menu .menu-item a {
   transition: all 0.5s ease;
 }
 header nav .menu .menu-item a:hover {
-  background-color: #ffdc50;
+  background-color: #FDE767;
   border-radius: 24px;
 }
 header nav .menu .current_page_item a {
@@ -53,12 +62,12 @@ header nav .menu .current_page_item a:hover {
 header nav .contact-btn {
   text-decoration: none;
   padding: 5px 10px;
-  border: solid 2px #202124;
   border-radius: 24px;
-  color: #202124;
+  background: #6895D2;
+  color: #fff;
   transition: all 0.8s ease;
 }
 header nav .contact-btn:hover {
-  background: #202124;
+  background: #6895D2;
   color: #fff;
 }
