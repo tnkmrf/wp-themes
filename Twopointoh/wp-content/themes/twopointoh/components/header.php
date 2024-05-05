@@ -12,11 +12,23 @@
 
                 );
                ?>
-
-            <a class = "contact-btn" href="">Contact</a>
             </div>
-            
+         
+            <div id ="toggler" onclick="displayNav()" class="nav-toggle">
+                
+            </div>
         </nav>
+    </div>
+    <div id ="nav-collapse-mobi" class="nav-collapse-mobi">
+            <?php
+               wp_nav_menu(
+
+                array(
+                    'theme_location' => 'mt-menu'
+                )
+
+                );
+               ?>
     </div>
 
 </header>

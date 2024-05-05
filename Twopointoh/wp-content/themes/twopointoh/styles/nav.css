@@ -1,9 +1,82 @@
 header {
   background-color: transparent;
-  position: fixed;
   display: flex;
   width: 100%;
   justify-content: center;
+  transition: 0.5s ease all;
+}
+@media (max-width: 861px) {
+  header {
+    transition: 0.5s ease all;
+    justify-content: flex-end;
+  }
+}
+header .nav-collapse-mobi {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  transition: 0.5s ease all;
+}
+@media (min-width: 860px) {
+  header .nav-collapse-mobi {
+    display: none;
+    transition: 0.5s ease all;
+  }
+}
+header .nav-collapse-mobi .menu {
+  display: none;
+  opacity: 0;
+  transition: 0.8s ease all;
+}
+header .opened {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #e9e9e9;
+  z-index: 8;
+  transition: 0.5s ease all;
+}
+@media (min-width: 860px) {
+  header .opened {
+    display: none;
+  }
+}
+header .opened .menu {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+header .opened .menu .menu-item {
+  width: 100%;
+}
+header .opened .menu .menu-item a {
+  display: block;
+  width: 100%;
+  color: #202124;
+  font-size: 24px;
+  padding: 16px 0;
+  text-decoration: none;
+}
+header .opened .menu .current_page_item a {
+  color: #2021249d;
+}
+header .nav-container {
+  position: fixed;
+  z-index: 9!important;
+  transition: 0.5s ease all;
+}
+@media (max-width: 861px) {
+  header .nav-container {
+    margin-right: 6%;
+    transition: 0.5s ease all;
+  }
 }
 header nav {
   margin-top: 20px;
@@ -33,6 +106,30 @@ header nav .nav-collapse {
   gap: 10px;
   align-items: center;
 }
+@media (max-width: 861px) {
+  header nav .nav-collapse {
+    display: none;
+  }
+}
+header nav .nav-toggle {
+  width: 40px;
+  height: 31px;
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('data:image/svg+xml,<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>Artboard 111</title><path d="M97.092,36.078H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/><path d="M97.092,61.889H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/><path d="M97.092,87.7H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/></svg>');
+}
+@media (min-width: 860px) {
+  header nav .nav-toggle {
+    display: none;
+  }
+}
+header nav .show-x {
+  background-image: url('data:image/svg+xml,<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>Artboard 101</title><path d="M79.459,48.3a2.11,2.11,0,0,0-2.985,0L64,60.778,51.523,48.3a2.111,2.111,0,1,0-2.985,2.985L61.014,63.763,48.541,76.237a2.111,2.111,0,1,0,2.985,2.985L64,66.748,76.474,79.222a2.111,2.111,0,0,0,2.985-2.985L66.984,63.763,79.459,51.286A2.11,2.11,0,0,0,79.459,48.3Z"/></svg>');
+}
 header nav .menu {
   display: flex;
   text-decoration: none;
@@ -58,16 +155,4 @@ header nav .menu .current_page_item a {
 header nav .menu .current_page_item a:hover {
   background-color: #202124;
   border-radius: 24px;
-}
-header nav .contact-btn {
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 24px;
-  background: #6895D2;
-  color: #fff;
-  transition: all 0.8s ease;
-}
-header nav .contact-btn:hover {
-  background: #6895D2;
-  color: #fff;
 }

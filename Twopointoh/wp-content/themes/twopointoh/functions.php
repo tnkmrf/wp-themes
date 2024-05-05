@@ -10,6 +10,7 @@ function master_theme_enqueue_styles(){
 
     wp_enqueue_script('gsap', esc_url(get_template_directory_uri()).'/scripts/gsap.min.js');
     wp_enqueue_script('scrolltrigger', esc_url(get_template_directory_uri()).'/scripts/scrolltrigger.min.js');
+    wp_enqueue_script('jquery', esc_url(get_template_directory_uri()).'/scripts/jquery.js');
     wp_enqueue_script('tools', esc_url(get_template_directory_uri()).'/scripts/tools.js');
 
 }
