@@ -132,7 +132,7 @@ header nav .nav-toggle {
   background-size: cover;
   background-position: center;
   transition: 0.3s ease all;
-  background-image: url('data:image/svg+xml,<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>Artboard 111</title><path d="M97.092,36.078H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/><path d="M97.092,61.889H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/><path d="M97.092,87.7H30.908a2.111,2.111,0,0,0,0,4.222H97.092a2.111,2.111,0,0,0,0-4.222Z"/></svg>');
+  background-image: url(../resources/img/icons/burger.svg);
 }
 @media (min-width: 860px) {
   header nav .nav-toggle {
@@ -141,7 +141,7 @@ header nav .nav-toggle {
 }
 header nav .show-x {
   transition: 0.3s ease all;
-  background-image: url('data:image/svg+xml,<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>Artboard 101</title><path d="M79.459,48.3a2.11,2.11,0,0,0-2.985,0L64,60.778,51.523,48.3a2.111,2.111,0,1,0-2.985,2.985L61.014,63.763,48.541,76.237a2.111,2.111,0,1,0,2.985,2.985L64,66.748,76.474,79.222a2.111,2.111,0,0,0,2.985-2.985L66.984,63.763,79.459,51.286A2.11,2.11,0,0,0,79.459,48.3Z"/></svg>');
+  background-image: url(../resources/img/icons/x.svg);
 }
 header nav .menu {
   display: flex;
@@ -158,14 +158,12 @@ header nav .menu .menu-item a {
 }
 header nav .menu .menu-item a:hover {
   background-color: #FDE767;
-  border-radius: 24px;
 }
 header nav .menu .current_page_item a {
-  background-color: #202124;
-  color: #fff;
+  background-color: #e3e3e3;
+  color: #202124;
   border-radius: 24px;
 }
 header nav .menu .current_page_item a:hover {
-  background-color: #202124;
-  border-radius: 24px;
+  background-color: #dfdfdf;
 }

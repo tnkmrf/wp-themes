@@ -39,7 +39,13 @@ while (have_posts()):
    
 
     <div class="post-content normal-width">
+        <div class="post-excerpt">
+        <?php echo wp_kses_post( get_the_excerpt());?>
+        </div>
+        <div class="post">
         <?php echo wp_kses_post( get_the_content());?>  
+        </div>
+        
     </div>
 
     </article>

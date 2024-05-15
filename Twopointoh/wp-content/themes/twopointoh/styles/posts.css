@@ -72,5 +72,13 @@ article {
 .post-content {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.post-content .post-excerpt {
+  font-size: 28px;
+  font-family: "Poppins-semibold";
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+.post-content .post {
   font-size: 18px;
 }
