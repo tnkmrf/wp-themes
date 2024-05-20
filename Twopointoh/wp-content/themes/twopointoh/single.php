@@ -38,8 +38,8 @@ while (have_posts()):
     </div>
    
 
-    <div class="post-content normal-width">
-        <div class="post-excerpt">
+    <div class="post-content">
+        <div class="post-excerpt normal-width">
         <?php echo wp_kses_post( get_the_excerpt());?>
         </div>
         <div class="post">

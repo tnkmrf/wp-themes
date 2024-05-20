@@ -46,7 +46,7 @@ header .opened {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: #e9e9e9;
+  background: #ffffff;
   z-index: 8;
   transition: 0.5s ease all;
 }
@@ -92,7 +92,7 @@ header .nav-container {
 }
 header nav {
   margin-top: 20px;
-  background-color: #e9e9e991;
+  background-color: #ffffff91;
   backdrop-filter: blur(10px);
   display: flex;
   align-content: center;
@@ -101,8 +101,8 @@ header nav {
   width: fit-content;
   border-radius: 24px;
   align-items: center;
-  font-size: 16px;
-  border: 1px solid rgba(227, 227, 227, 0.3);
+  font-size: 18px;
+  border: none;
 }
 header nav .nav-logo {
   width: 40px;
