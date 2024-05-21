@@ -24,8 +24,12 @@ while (have_posts()):
     <article>
     <div class ="post-header">
         <div class="post-details ">
-            <h1 onclick="myFunction()"><?php esc_html_e($title)?></h1>
             <a class ="category-link" href = "<?php echo esc_url($category_link)?>"><?php esc_html_e($category_name)?></a>
+            <h1 onclick="myFunction()"><?php esc_html_e($title)?></h1>
+            <div class="post-excerpt">
+            <?php echo wp_kses_post( get_the_excerpt());?>
+            </div>
+            
         </div>
         <?php
         if(!empty($thumbnail)){
@@ -39,9 +43,7 @@ while (have_posts()):
    
 
     <div class="post-content">
-        <div class="post-excerpt normal-width">
-        <?php echo wp_kses_post( get_the_excerpt());?>
-        </div>
+
         <div class="post">
         <?php echo wp_kses_post( get_the_content());?>  
         </div>

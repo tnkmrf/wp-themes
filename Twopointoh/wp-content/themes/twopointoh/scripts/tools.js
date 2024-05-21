@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
         }
       })
 
-
+    
 
 function displayNav(){
   let opnnav = document.getElementById("nav-collapse-mobi");
