@@ -11,12 +11,12 @@
   margin-right: auto;
 }
 article {
-  background-color: #F4f3f4;
+  background-color: #E9E9E9;
 }
 .post-header {
   width: 100%;
-  background-color: #202124;
-  color: #f4f3f4;
+  background-color: #E9E9E9;
+  color: #202124;
 }
 .post-header .post-details {
   width: 88%;
@@ -28,9 +28,10 @@ article {
 }
 .post-header .post-details .category-link {
   text-transform: uppercase;
-  color: #f4f3f4;
+  color: #202124;
   text-decoration: none;
   padding-bottom: 6px;
+  font-family: 'Poppins-medium';
   font-size: 20px;
   background-repeat: no-repeat;
   transition: all ease 0.3s;
@@ -48,8 +49,8 @@ article {
 }
 .post-header .post-details .post-excerpt {
   font-size: 32px;
-  font-family: "Poppins-light";
-  color: #acacac;
+  font-family: "Poppins-semibold";
+  color: #878685;
   line-height: 125%;
   margin-bottom: 50px;
 }

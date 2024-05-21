@@ -92,16 +92,19 @@ header .nav-container {
 }
 header nav {
   margin-top: 20px;
-  background-color: #ffffff91;
+  background-color: #ffffffd7;
   backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
+  -moz-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
+  box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
   display: flex;
   align-content: center;
   gap: 20px;
-  padding: 10px 10px;
+  padding: 10px 16px;
   width: fit-content;
   border-radius: 24px;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
 }
 header nav .nav-logo {
@@ -153,6 +156,7 @@ header nav .menu .menu-item a {
   padding: 5px 8px;
   text-decoration: none;
   color: #202124;
+  font-family: 'Poppins-medium';
   border-radius: 24px;
   transition: all 0.5s ease;
 }
