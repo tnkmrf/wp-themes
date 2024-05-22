@@ -172,6 +172,7 @@ header nav .menu .menu-item a {
   text-decoration: none;
   color: #202124;
   font-family: 'Poppins-medium';
+  margin: 0;
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
