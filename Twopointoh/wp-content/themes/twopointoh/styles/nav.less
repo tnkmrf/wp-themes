@@ -105,9 +105,9 @@ header{
         align-items: center;
         align-content: center;
         gap: 20px;
-        padding: 10px 16px;
+        padding: 18px 18px;
         width: fit-content;
-        border-radius: 24px;
+        border-radius: 32px;
         align-items: center;
         font-size: 20px;
         border: none;
@@ -160,26 +160,55 @@ header{
             gap: 10px;
             .menu-item{
                 a{
-                    padding: 5px 8px;
+                    padding-left: 8px;
+                    padding-right: 8px;
                     text-decoration: none;
                     color: #202124;
                     font-family: 'Poppins-medium';
-                    border-radius: 24px;
                     transition: all 0.5s ease;
-                    &:hover{
-                        background-color: #FDE767;
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    &:after{
+                        content: '';
+                        height:3px;
+                        width: 0px;
+                        transition: 0.8s all ease;
                     }
+                    &:hover{
+                    &:after{
+                        content: '';
+                        height:3px;
+                        width: 100%;
+                        background-color: #202124;
+                    }
+                    }
+
+             
                 }
               
             }
 
             .current_page_item{
                 a{
-                    background-color: #e3e3e3;
                     color: #202124;
-                    border-radius: 24px;
+                    &:after{
+                        content: '';
+                        height:3px;
+                        width: 100%;
+                        background-color: #878685;
+                    }
+                    
                     &:hover{
-                    background-color: #dfdfdf;
+                   &:after{
+                    &:after{
+                        content: '';
+                        height:3px;
+                        width: 100%;
+                        background-color: #202124;
+                    }
+                   }
+                    
                     }
                 }
            
