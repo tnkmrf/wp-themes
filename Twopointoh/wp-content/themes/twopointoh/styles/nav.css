@@ -72,7 +72,7 @@ header .opened .menu .menu-item a {
   display: block;
   width: 100%;
   color: #202124;
-  font-size: 24px;
+  font-size: 36px;
   font-family: 'Poppins-medium';
   padding: 16px 0;
   text-decoration: none;
@@ -93,6 +93,31 @@ header .opened .menu .current_page_item a:after {
   background-color: #878685;
   transition: 0.8s all ease;
 }
+header .opened .contact-btn {
+  font-size: 36px;
+  text-decoration: none;
+  width: 88%;
+  padding: 16px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins-medium';
+  color: #202124;
+  gap: 10px;
+}
+@media (min-width: 860px) {
+  header .opened .contact-btn {
+    display: none;
+  }
+}
+header .opened .contact-btn span {
+  display: flex;
+  background-color: #FDE767;
+  border-radius: 36px;
+}
+header .contact-btn {
+  display: none;
+}
 header .nav-container {
   position: fixed;
   z-index: 9!important;
@@ -108,9 +133,9 @@ header nav {
   margin-top: 20px;
   background-color: #ffffffd7;
   backdrop-filter: blur(10px);
-  -webkit-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
-  -moz-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
-  box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.88);
+  -webkit-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.2);
+  -moz-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.2);
+  box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.2);
   display: flex;
   align-content: center;
   gap: 20px;
@@ -122,7 +147,7 @@ header nav {
   border: none;
 }
 header nav .nav-logo {
-  width: 40px;
+  width: 44px;
   display: flex;
 }
 header nav .nav-logo img {
@@ -204,4 +229,35 @@ header nav .menu .current_page_item a:hover:after:after {
   height: 3px;
   width: 100%;
   background-color: #202124;
+}
+header nav .contact-btn {
+  text-decoration: none;
+  background-color: #FDE767;
+  padding: 3px 16px;
+  border-radius: 24px;
+  color: #202124;
+  font-family: 'Poppins-medium';
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  transition: 0.8s all ease;
+}
+@media (max-width: 861px) {
+  header nav .contact-btn {
+    display: none;
+  }
+}
+header nav .contact-btn span {
+  display: flex;
+}
+header nav .contact-btn span img {
+  height: 30px;
+  transition: 0.8s all ease;
+}
+header nav .contact-btn:hover {
+  background-color: #F3B95F;
+}
+header nav .contact-btn:hover span img {
+  transform: translateX(16px);
 }

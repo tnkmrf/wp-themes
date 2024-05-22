@@ -52,10 +52,11 @@ header{
             list-style: none;
             .menu-item{
                 width: 100%;
+               
                 a{  display: block;
                     width: 100%;
                     color: #202124;
-                    font-size: 24px;
+                    font-size: 36px;
                     font-family: 'Poppins-medium';
                     padding: 16px 0;
                     text-decoration: none;
@@ -83,6 +84,32 @@ header{
            
             }
         }
+
+        .contact-btn{
+            @media(min-width:860px){
+                display: none;
+              
+            }
+            font-size: 36px;
+            text-decoration: none;
+            width: 88%;
+            padding: 16px 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins-medium';
+            color: #202124;
+            gap: 10px;
+            span{
+                display: flex;
+                background-color: #FDE767;
+                border-radius: 36px;
+            }
+        }
+    }
+
+    .contact-btn{
+        display: none;
     }
 
     .nav-container{
@@ -98,9 +125,9 @@ header{
         margin-top: 20px;
         background-color: #ffffffd7;
         backdrop-filter: blur(10px);
-        -webkit-box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.88);
-        -moz-box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.88);
-        box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.88);
+        -webkit-box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.2);
+        -moz-box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.2);
+        box-shadow: 0px 5px 47px -21px rgba(77,77,77,0.2);
         display: flex;
         align-items: center;
         align-content: center;
@@ -114,7 +141,7 @@ header{
        
 
         .nav-logo{
-            width: 40px;
+            width: 44px;
             display: flex;
             img{
                 width: 100%;
@@ -213,6 +240,39 @@ header{
                     }
                 }
            
+            }
+        }
+
+        .contact-btn{
+            @media(max-width:861px){
+                display: none;
+                }
+            text-decoration: none;
+            background-color: #FDE767;
+            padding: 3px 16px;
+            border-radius: 24px;
+            color: #202124;
+            font-family: 'Poppins-medium';
+            display: flex;
+            align-items: center;
+            gap:6px;
+            overflow: hidden;
+            span{
+                display: flex;
+                img{
+                    height: 30px;
+                    transition: 0.8s all ease;
+                }
+            }
+            transition: 0.8s all ease;
+            &:hover{
+                background-color: #F3B95F;
+                span{
+                    img{
+                      transform: translateX(16px);
+                    }
+                }
+             
             }
         }
     }
