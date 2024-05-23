@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins";
+  scroll-behavior: smooth!important;
+}
+.normal-width {
+  width: 88%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-container {
+  padding-top: 120px;
+  background-color: #202124;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.footer-container .footer-cta {
+  width: 100%;
+  overflow: hidden;
+}
+.footer-container .footer-cta a {
+  display: flex;
+  align-items: stretch;
+  color: #dddddd;
+  font-size: 100px;
+  line-height: 125%;
+  font-family: 'Poppins-bold';
+  text-decoration: none;
+  transition: all 0.8s ease;
+  flex-wrap: wrap;
+}
+.footer-container .footer-cta a span {
+  display: flex;
+}
+.footer-container .footer-cta a span img {
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  transition: all 0.8s ease;
+  transform: translateX(-100%);
+}
+.footer-container .footer-cta a:hover {
+  color: #FDE767;
+}
+.footer-container .footer-cta a:hover span img {
+  height: 100%;
+  width: auto;
+  opacity: 1;
+  transform: translateX(0);
+}

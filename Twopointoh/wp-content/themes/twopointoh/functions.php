@@ -4,7 +4,8 @@ add_theme_support('post-thumbnails');
 
 function master_theme_enqueue_styles(){
     wp_enqueue_style('mt-fonts',esc_url(get_stylesheet_directory_uri()).'/fonts/fonts.css');
-    wp_enqueue_style('mt-util',esc_url(get_stylesheet_directory_uri()).'/styles/nav.css');
+    wp_enqueue_style('mt-nav',esc_url(get_stylesheet_directory_uri()).'/styles/nav.css');
+    wp_enqueue_style('mt-footer',esc_url(get_stylesheet_directory_uri()).'/styles/footer.css');
     wp_enqueue_style('mt-util',esc_url(get_stylesheet_directory_uri()).'/styles/utils.css');
     wp_enqueue_style('mt-posts',esc_url(get_stylesheet_directory_uri()).'/styles/posts.css');
 
