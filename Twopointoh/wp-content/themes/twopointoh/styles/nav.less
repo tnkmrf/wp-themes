@@ -5,6 +5,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: center;
+    overflow: hidden;
     transition: 0.5s ease all;
     @media(max-width:861px){
         transition: 0.5s ease all;
@@ -120,6 +121,11 @@ header{
             margin-right: 6%;
             transition: 0.5s ease all;
         }
+    }
+
+    .hidenav{
+        transform: translateY(-200px);
+        transition: 0.5s ease all;
     }
     nav{
         margin-top: 20px;

@@ -15,6 +15,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
+  overflow: hidden;
   transition: 0.5s ease all;
 }
 @media (max-width: 861px) {
@@ -128,6 +129,10 @@ header .nav-container {
     margin-right: 6%;
     transition: 0.5s ease all;
   }
+}
+header .hidenav {
+  transform: translateY(-200px);
+  transition: 0.5s ease all;
 }
 header nav {
   margin-top: 20px;

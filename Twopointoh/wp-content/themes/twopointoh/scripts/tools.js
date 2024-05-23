@@ -5,10 +5,25 @@ gsap.registerPlugin(ScrollTrigger);
         scrollTrigger:{
           trigger: ".post-thumb",
           start: "top center",
-          markers: true,
           toggleClass: "big-thumb"
         }
-      })
+      });
+
+// Hide nav on scroll
+let prevScrollPos = window.scrollY;
+
+window.addEventListener('scroll', function() {
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+ 
+    document.querySelector('.nav-container').classList.remove('hidenav');
+  } else {
+    
+    document.querySelector('.nav-container').classList.add('hidenav');
+  }
+  prevScrollPos = currentScrollPos;
+});
 
     
 
@@ -18,5 +33,8 @@ function displayNav(){
   opnnav.classList.toggle("opened");
   navico.classList.toggle("show-x");
 }
+
+
+
 
  
