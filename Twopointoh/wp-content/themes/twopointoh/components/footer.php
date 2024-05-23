@@ -8,6 +8,7 @@ $contact_link = get_field('contact_link',$menu);
     <div class="footer-container">
         <div class="footer-content normal-width">
             <div class="footer-cta">
+                <p>Don't wait any longer,</p>
                 <a href="<?php echo esc_html($contact_link['url'])?>"><?php echo esc_html($contact_link['title'])?><span><img src="<?php echo get_template_directory_uri()?>/resources/img/icons/arrow-right-footer.svg" alt="logo"></span></a>
             </div>
         </div>

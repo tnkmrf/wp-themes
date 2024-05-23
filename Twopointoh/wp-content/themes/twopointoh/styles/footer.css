@@ -19,6 +19,13 @@
 .footer-container .footer-cta {
   width: 100%;
   overflow: hidden;
+  max-width: 720px;
+}
+.footer-container .footer-cta p {
+  font-size: 48px;
+  line-height: 125%;
+  font-family: 'Poppins-bold';
+  color: #dddddd;
 }
 .footer-container .footer-cta a {
   display: flex;
