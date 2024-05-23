@@ -50,6 +50,16 @@ while (have_posts()):
         
     </div>
 
+    <?php if (!empty(get_the_tag_list())){
+        ?>
+    <div class="post-tags normal-width">
+        <h3><?php esc_html_e('Tagged' )?></h3>
+        <?php echo get_the_tag_list('<ul><li>', '</li><li>', '</li></ul>') ?>
+    </div>
+    <?php
+    };
+    ?>
+
     </article>
 <?php
 endwhile;

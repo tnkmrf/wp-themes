@@ -57,7 +57,7 @@ article {
 }
 .post-header .post-details .post-excerpt {
   font-size: 28px;
-  font-family: "Poppins-semibold";
+  font-family: "Poppins-medium";
   color: #878685;
   line-height: 125%;
   margin-bottom: 50px;
@@ -93,6 +93,37 @@ article {
 }
 .post-content .post p {
   margin-left: 6%;
+  color: #202124;
+  font-family: 'Poppins-medium';
   max-width: 800px;
   width: 88%;
+}
+.post-tags {
+  padding-bottom: 200px;
+}
+.post-tags h3 {
+  font-family: 'Poppins-bold';
+  font-size: 40px;
+  line-height: 125%;
+}
+.post-tags ul {
+  margin-top: 60px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.post-tags ul li {
+  text-decoration: none;
+}
+.post-tags ul li a {
+  color: #202124;
+  text-decoration: none;
+  font-family: 'Poppins-medium';
+  border: solid 2px #878685;
+  padding: 10px;
+  border-radius: 32px;
+  transition: 0.3s all ease;
+}
+.post-tags ul li a:hover {
+  border-color: #202124;
 }

@@ -54,7 +54,7 @@ article{
 
         .post-excerpt{
             font-size: 28px;
-            font-family: "Poppins-semibold";
+            font-family: "Poppins-medium";
             color: #878685;
             line-height: 125%;
             margin-bottom: 50px;
@@ -98,10 +98,51 @@ img{
 
     .post{
         font-size: 20px;
+     
+       
         p{
             margin-left: 6%;
+            color: #202124;
+            font-family: 'Poppins-medium';
             max-width: 800px;
             width: 88%;
+        }
+    }
+
+
+}
+
+.post-tags{
+   
+    padding-bottom: 200px;
+    h3{
+        font-family: 'Poppins-bold';
+        font-size: 40px;
+        line-height: 125%;
+    }
+    ul{
+        margin-top: 60px;
+        display: flex;
+        list-style: none;
+        gap:20px;
+        li{
+            text-decoration: none;
+            
+            a{
+                color: #202124;
+                text-decoration: none;
+                font-family: 'Poppins-medium';
+                border: solid 2px #878685;
+                padding: 10px;
+                border-radius: 32px;
+                transition: 0.3s all ease;
+                &:hover{
+                  
+                    border-color: #202124;
+                }
+   
+            }
+
         }
     }
 }
