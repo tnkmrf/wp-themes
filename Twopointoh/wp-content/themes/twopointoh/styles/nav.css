@@ -132,7 +132,7 @@ header .nav-container {
 }
 header nav {
   margin-top: 20px;
-  background-color: #ffffffd7;
+  background-color: #ffffffad;
   backdrop-filter: blur(10px);
   -webkit-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.2);
   -moz-box-shadow: 0px 5px 47px -21px rgba(77, 77, 77, 0.2);
@@ -140,7 +140,7 @@ header nav {
   display: flex;
   align-content: center;
   gap: 20px;
-  padding: 18px 18px;
+  padding: 12px 18px;
   width: fit-content;
   border-radius: 32px;
   align-items: center;
@@ -242,7 +242,7 @@ header nav .contact-btn {
   align-items: center;
   gap: 6px;
   overflow: hidden;
-  transition: 0.8s all ease;
+  transition: 0.3s all ease;
 }
 @media (max-width: 861px) {
   header nav .contact-btn {
@@ -257,7 +257,7 @@ header nav .contact-btn span img {
   transition: 0.8s all ease;
 }
 header nav .contact-btn:hover {
-  background-color: #F3B95F;
+  transform: scale(1.03);
 }
 header nav .contact-btn:hover span img {
   transform: translateX(16px);

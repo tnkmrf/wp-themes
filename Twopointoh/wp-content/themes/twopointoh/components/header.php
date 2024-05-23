@@ -28,7 +28,8 @@
             </div>
         </nav>
     </div>
-    <div id ="nav-collapse-mobi" class="nav-collapse-mobi">
+
+            <div id ="nav-collapse-mobi" class="nav-collapse-mobi">
             <?php
                wp_nav_menu(
 
@@ -38,7 +39,7 @@
 
                 );
                ?>
-                <a class = "contact-btn" href="<?php echo esc_url($contact_link['url']) ?>"><?php echo esc_html($contact_link['title']) ?><span><img src="<?php echo get_template_directory_uri()?>/resources/img/icons/arrow-right.svg" alt="logo"></span></a>
-    </div>
+                <a class = "contact-btn" href="<?php echo esc_url($contact_link['url']) ?>"><?php echo esc_html($contact_link['title']) ?><span><img src="<?php echo get_template_directory_uri()?>/resources/img/icons/arrow-right.svg"></span></a>
+             </div>
 
 </header>
