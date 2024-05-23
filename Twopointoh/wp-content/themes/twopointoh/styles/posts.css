@@ -27,31 +27,20 @@ article {
   margin-bottom: 100px;
 }
 .post-header .post-details .category-link {
-  text-transform: uppercase;
   color: #202124;
   text-decoration: none;
   padding-bottom: 6px;
-  font-family: 'Poppins-semibold';
-  font-size: 20px;
+  font-family: 'Poppins-bold';
+  font-size: 24px;
   background-repeat: no-repeat;
+  background-color: #dddddd;
+  padding: 5px 16px;
+  border-radius: 32px;
   transition: all ease 0.3s;
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   width: fit-content;
-}
-.post-header .post-details .category-link:after {
-  content: '';
-  height: 2px;
-  width: 50px;
-  background-color: #878685;
-  transition: 0.8s all ease;
-}
-.post-header .post-details .category-link:hover:after {
-  content: '';
-  height: 2px;
-  width: 100%;
-  background-color: #202124;
 }
 .post-header .post-details h1 {
   font-family: "Poppins-semibold";
