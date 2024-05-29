@@ -15,7 +15,6 @@ article {
 }
 .post-header {
   width: 100%;
-  background-color: #E9E9E9;
   color: #202124;
 }
 .post-header .post-details {
@@ -33,7 +32,7 @@ article {
   font-family: 'Poppins-bold';
   font-size: 20px;
   background-repeat: no-repeat;
-  background-color: #dddddd;
+  background-color: #1c1c1c14;
   padding: 5px 16px;
   border-radius: 32px;
   transition: 0.3s all ease;
@@ -56,10 +55,12 @@ article {
   margin-bottom: 42px;
 }
 .post-header .post-details .post-excerpt {
+  border-top: #202124 solid 3px;
+  padding-top: 50px;
   font-size: 28px;
   font-family: "Poppins-medium";
-  color: #878685;
-  line-height: 125%;
+  color: #202124;
+  line-height: 150%;
   margin-bottom: 50px;
 }
 .post-thumb {
@@ -89,22 +90,14 @@ article {
   padding-bottom: 100px;
 }
 .post-content .post {
-  font-size: 20px;
+  font-size: 24px;
 }
 .post-content .post p {
-  margin-left: 6%;
+  margin: auto;
   color: #202124;
   font-family: 'Poppins-medium';
   max-width: 800px;
   width: 88%;
-}
-.post-tags {
-  padding-bottom: 200px;
-}
-.post-tags h3 {
-  font-family: 'Poppins-bold';
-  font-size: 40px;
-  line-height: 125%;
 }
 .post-tags ul {
   margin-top: 60px;
@@ -119,7 +112,7 @@ article {
   color: #202124;
   text-decoration: none;
   font-family: 'Poppins-medium';
-  border: solid 2px #878685;
+  border: solid 2px #1c1c1c32;
   padding: 10px;
   border-radius: 32px;
   transition: 0.3s all ease;

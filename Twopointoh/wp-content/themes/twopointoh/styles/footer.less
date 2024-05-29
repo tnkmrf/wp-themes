@@ -5,50 +5,78 @@
     background-color:#202124;
     color: #fff;
     padding-bottom: 40px;
+    
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
 
-    .footer-cta{
-        width: 100%;
-        overflow: hidden;
-        max-width: 720px;
-        p{
-            font-size: 48px;
-            line-height: 125%;
-            font-family: 'Poppins-bold';
-            color: #dddddd;
-            
-        }
-        a{
-            display: flex;
-            align-items: stretch;
-            color: #dddddd;
-            font-size:100px;
-            line-height: 125%;
-            font-family: 'Poppins-bold';
-            text-decoration: none;
-            transition: all 0.8s ease;
-            flex-wrap: wrap;
-            span{
-                display: flex;
-         
-                img{
-                    height: 100%;
-                    width: auto;
-                    opacity: 0;
-                    transition: all 0.8s ease;
-                    transform: translateX(-100%);
-                }
-            }
-            &:hover{
-                color: #FDE767;
-                span{ 
-                    img{
-                        height: 100%;
-                        width: auto;
-                        opacity: 1;
-                        transform: translateX(0);
+        .footer-nav{
+            .footer-nav-items{
+                ul{
+                    list-style: none;
+                    li{
+                        a{
+                            font-size: 32px;
+                            line-height: 125%;
+                            font-family: 'Poppins-bold';
+                            text-decoration: none;
+                            color: #ddd;
+                        }
                     }
                 }
             }
         }
+
+
+        .footer-cta{
+            width: 100%;
+            overflow: hidden;
+            max-width: 720px;
+            p{
+                font-size: 48px;
+                line-height: 125%;
+                font-family: 'Poppins-bold';
+                color: #9d9c9b;
+                
+            }
+            a{
+                display: flex;
+                align-items: stretch;
+                color: #dddddd;
+                font-size:100px;
+                line-height: 125%;
+                font-family: 'Poppins-bold';
+                text-decoration: none;
+                transition: all 0.8s ease;
+                flex-wrap: wrap;
+                span{
+                    display: flex;
+             
+                    img{
+                        height: 100%;
+                        width: auto;
+                        opacity: 0;
+                        transition: all 0.8s ease;
+                        transform: translateX(-100%);
+                    }
+                }
+                &:hover{
+                    color: #FDE767;
+                    span{ 
+                        img{
+                            height: 100%;
+                            width: auto;
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                }
+            }
+        }
+
     }
+
+
+
+ 
 }
