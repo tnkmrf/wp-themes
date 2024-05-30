@@ -19,16 +19,15 @@
 .footer-container .footer-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 148px;
+  flex-wrap: wrap;
 }
-.footer-container .footer-content .footer-nav .footer-nav-items ul {
-  list-style: none;
-}
-.footer-container .footer-content .footer-nav .footer-nav-items ul li a {
+.footer-container .footer-content .footer-heading {
   font-size: 32px;
-  line-height: 125%;
+  color: #9d9c9b;
   font-family: 'Poppins-bold';
-  text-decoration: none;
-  color: #ddd;
+  line-height: 150%;
+  margin-bottom: 32px;
 }
 .footer-container .footer-content .footer-cta {
   width: 100%;
@@ -52,22 +51,58 @@
   transition: all 0.8s ease;
   flex-wrap: wrap;
 }
-.footer-container .footer-content .footer-cta a span {
-  display: flex;
-}
-.footer-container .footer-content .footer-cta a span img {
-  height: 100%;
-  width: auto;
-  opacity: 0;
-  transition: all 0.8s ease;
-  transform: translateX(-100%);
-}
 .footer-container .footer-content .footer-cta a:hover {
   color: #FDE767;
 }
-.footer-container .footer-content .footer-cta a:hover span img {
-  height: 100%;
-  width: auto;
-  opacity: 1;
-  transform: translateX(0);
+.footer-container .footer-content .footer-nav .footer-nav-items ul {
+  list-style: none;
+}
+.footer-container .footer-content .footer-nav .footer-nav-items ul li a {
+  font-size: 24px;
+  line-height: 150%;
+  font-family: 'Poppins-semibold';
+  text-decoration: none;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.footer-container .footer-content .footer-nav .footer-nav-items ul li a:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  transition: all 0.8s ease;
+  background-color: none;
+}
+.footer-container .footer-content .footer-nav .footer-nav-items ul li a:hover:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #ddd;
+}
+.footer-container .footer-content .footer-legal ul {
+  list-style: none;
+}
+.footer-container .footer-content .footer-legal ul li a {
+  text-decoration: none;
+  font-family: 'Poppins-semibold';
+  font-size: 24px;
+  line-height: 150%;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.footer-container .footer-content .footer-legal ul li a:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  transition: all 0.8s ease;
+  background-color: none;
+}
+.footer-container .footer-content .footer-legal ul li a:hover:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #ddd;
 }

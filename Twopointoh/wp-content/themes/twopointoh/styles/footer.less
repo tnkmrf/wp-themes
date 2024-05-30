@@ -9,25 +9,15 @@
     .footer-content{
         display: flex;
         justify-content: space-between;
-
-        .footer-nav{
-            .footer-nav-items{
-                ul{
-                    list-style: none;
-                    li{
-                        a{
-                            font-size: 32px;
-                            line-height: 125%;
-                            font-family: 'Poppins-bold';
-                            text-decoration: none;
-                            color: #ddd;
-                        }
-                    }
-                }
-            }
+        margin-bottom: 148px;
+        flex-wrap: wrap;
+        .footer-heading{
+            font-size: 32px;
+            color: #9d9c9b;
+            font-family: 'Poppins-bold';
+            line-height: 150%;
+            margin-bottom: 32px;
         }
-
-
         .footer-cta{
             width: 100%;
             overflow: hidden;
@@ -49,30 +39,83 @@
                 text-decoration: none;
                 transition: all 0.8s ease;
                 flex-wrap: wrap;
-                span{
-                    display: flex;
-             
-                    img{
-                        height: 100%;
-                        width: auto;
-                        opacity: 0;
-                        transition: all 0.8s ease;
-                        transform: translateX(-100%);
-                    }
-                }
+               
                 &:hover{
                     color: #FDE767;
-                    span{ 
-                        img{
-                            height: 100%;
-                            width: auto;
-                            opacity: 1;
-                            transform: translateX(0);
-                        }
+                }
+            }
+        }
+
+        .footer-nav{
+            .footer-nav-items{
+                ul{
+                    list-style: none;
+                    li{
+                        a{
+                            font-size: 24px;
+                            line-height: 150%;
+                            font-family: 'Poppins-semibold';
+                            text-decoration: none;
+                            color: #ddd;
+                            display: flex;
+                            flex-direction: column;
+                            width: fit-content;
+                            &:after{
+                                content: '';
+                                height:2px;
+                                width: 0;
+                                transition: all 0.8s ease;
+                                background-color: none;
+                                
+                            }
+                            &:hover{
+                                &:after{
+                                    content: '';
+                                    height:2px;
+                                    width: 100%;
+                                    background-color: #ddd;
+                                }
+                            } 
+                        }      
                     }
                 }
             }
         }
+
+        .footer-legal{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-family: 'Poppins-semibold';
+                        font-size: 24px;
+                        line-height: 150%;
+                        color: #ddd;
+                        display: flex;
+                        flex-direction: column;
+                        width: fit-content;
+                        &:after{
+                            content: '';
+                            height:2px;
+                            width: 0;
+                            transition: all 0.8s ease;
+                            background-color: none;
+                            
+                        }
+                        &:hover{
+                            &:after{
+                                content: '';
+                                height:2px;
+                                width: 100%;
+                                background-color: #ddd;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+
 
     }
 

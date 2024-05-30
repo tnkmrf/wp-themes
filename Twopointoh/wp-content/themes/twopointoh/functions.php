@@ -47,6 +47,12 @@ function mt_menu(){
 }
 add_action('init','mt_menu');
 
+
+function mt_footer(){
+    register_nav_menu('mt-footer',__('Footer Menu'));
+}
+add_action('init','mt_footer');
+
 function allowsvg($mimes){
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
