@@ -10,11 +10,11 @@ $terms_link = get_field('terms_&_conditions',$footer);
 <footer>
     <div class="footer-container">
         <div class="footer-content normal-width">
-                <div class="footer-cta">
-                    <p>Don't wait any longer,</p>
-                    <a href="<?php echo esc_html($contact_link['url'])?>"><?php echo esc_html($contact_link['title'])?></a>
+                <div class="footer-logo">
+                <a class = "foot-logo" href ="<?php echo get_home_url()?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/resources/img/icons/logo-full.svg" alt="logo"></a>
                 </div>
 
+            <div class="footer-objects">
             <div class="footer-nav">
                 <h4 class="footer-heading">Studio</h4>
                 <div class="footer-nav-items">
@@ -38,7 +38,9 @@ $terms_link = get_field('terms_&_conditions',$footer);
                     <li><a href="<?php echo esc_html($terms_link['url'])?>"><?php echo esc_html($terms_link['title'])?></a></li>
                 </ul>
             </div>
-     
+            </div>
+         
         </div>
+    
     </div>
 </footer>

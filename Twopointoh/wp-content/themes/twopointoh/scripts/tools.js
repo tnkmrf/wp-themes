@@ -20,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
       });
 
 
+
    
 //Hide nav on scroll
 showAnim = gsap.from('.nav-container', { 
@@ -35,6 +36,7 @@ ScrollTrigger.create({
     self.direction === -1 ? showAnim.play() : showAnim.reverse()
   }
 });
+
 
 
  
