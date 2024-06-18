@@ -256,9 +256,6 @@ header nav .contact-btn span img {
   height: 30px;
   transition: 0.8s all ease;
 }
-header nav .contact-btn:hover {
-  transform: scale(1.03);
-}
 header nav .contact-btn:hover span img {
   transform: translateX(16px);
 }
