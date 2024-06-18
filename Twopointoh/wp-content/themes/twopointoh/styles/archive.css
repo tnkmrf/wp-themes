@@ -25,12 +25,18 @@
   border-bottom: #202124 solid 3px;
 }
 .archive-page .posts-grid {
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .archive-page .posts-grid .archive-post-link {
-  max-width: 50%;
+  max-width: 49%;
+  min-width: 49%;
   text-decoration: none;
+}
+.archive-page .posts-grid .archive-post-link:nth-child(2) {
+  margin-top: 100px;
 }
 .archive-page .posts-grid .archive-post-link .thumb-container {
   border-radius: 24px;
@@ -48,6 +54,6 @@
   display: flex;
   align-items: center;
   color: #202124;
-  font-family: 'Poppins-medium';
+  font-family: 'Poppins-bold';
   gap: 16px;
 }
