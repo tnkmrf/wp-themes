@@ -44,9 +44,6 @@ article {
 .post-header .post-details .category-link span {
   display: flex;
 }
-.post-header .post-details .category-link:hover {
-  transform: scale(1.03);
-}
 .post-header .post-details h1 {
   font-family: "Poppins-semibold";
   margin-top: 42px;

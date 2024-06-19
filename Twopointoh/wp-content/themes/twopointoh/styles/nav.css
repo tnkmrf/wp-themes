@@ -223,7 +223,7 @@ header nav .menu .current_page_item a:after {
   content: '';
   height: 3px;
   width: 100%;
-  background-color: #878685;
+  background-color: #202124;
 }
 header nav .menu .current_page_item a:hover:after:after {
   content: '';
