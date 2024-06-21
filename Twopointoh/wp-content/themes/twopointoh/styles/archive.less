@@ -1,7 +1,7 @@
 @import url('utils.less');
 
 .archive-page{
-    padding-top: 240px;
+    padding-top: 200px;
     padding-bottom: 100px;
     background-color: #ede9e5;
 
@@ -11,12 +11,13 @@
             font-size: 106px;
             line-height: 110%;
             padding-bottom: 42px;
-            margin-bottom: 50px;
-            border-bottom: #202124 solid 3px;
+            text-transform: uppercase;
+        
     }
 
     .archive-intro{
-        font-size: 32px;
+        font-size: 28px;
+        max-width: 720px;
         p{
             font-family: "Poppins-medium";
         }
@@ -35,7 +36,14 @@
         flex-wrap: wrap;
         align-items: flex-start;
         .archive-post-link{
-      
+            &:hover{
+                //cursor: url(../resources/img/icons/outbound.svg),pointer;
+                 .thumb-container .thumb-category{
+                 
+                  opacity: 1;
+                }
+
+            }
             &:nth-child(2){
                 margin-top: 100px;
             }
@@ -43,24 +51,44 @@
             min-width: 49%;
             text-decoration: none;
             .thumb-container{
+              
                 position: relative;
                 border-radius: 24px;
                 display: flex;
                 width: 100%;
                 overflow: hidden;
                 margin-bottom: 24px;
+             
                 img{
                     width: 100%;   
-                    aspect-ratio: 16/10;
+                    aspect-ratio: 16/11;
                
                 }
+                .thumb-category{
+                    position: absolute;  
+                    padding-top: 100%;
+                    bottom:0;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    transition: all ease 0.5s;
+                    background: rgb(255,255,255);
+                    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(32,33,36,1) 100%);
+                    width: 100%;
+                    opacity: 0;
+                    .thumb-cat{
+                        font-family: 'Poppins-medium';
+                        padding: 0 24px ;
+                    }
+                    .thumb-excerpt{
+                        text-transform: none;
+                        padding: 24px;
+                    }
+                }   
 
              
             }
 
-            .thumb-info{
-                margin-left: 24px;
-            }
             .thumb-category{
                 text-transform: uppercase;
                 color:  #878685;

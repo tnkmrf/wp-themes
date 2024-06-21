@@ -39,11 +39,10 @@ get_header();
         <a class ="archive-post-link" href="<?php echo esc_url(get_the_permalink( $article))?>">
             <div class="thumb-container">
             <img src="<?php echo esc_url(get_the_post_thumbnail_url( $article));?>" alt="">
-    
+            <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span></div>
             </div>
             <div class="thumb-info">  
                 <div class="thumb-name"><?php esc_html_e(get_the_title( $article))?></div>
-                <p class="thumb-category"><?php esc_html_e($category_name)?></p>
             </div>
    
         </a>
