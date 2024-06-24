@@ -25,17 +25,15 @@ while (have_posts()):
     <article>
     <div class ="post-header" style="background:<?php echo esc_html($main_colour)?>">
         <div class="post-details ">
-            <a class ="category-link" href = "<?php echo esc_url($category_link)?>"><?php esc_html_e($category_name)?></a>
+          
             <h1 onclick="myFunction()"><?php esc_html_e($title)?></h1>
+            <a class ="category-link" href = "<?php echo esc_url($category_link)?>"><?php esc_html_e($category_name)?></a>
             <div class="post-excerpt">
             <?php echo wp_kses_post( get_the_excerpt());?>
             </div>
             <?php if (!empty(get_the_tag_list())){
             ?>
-            <div class="post-tags">
-             
-                <?php echo get_the_tag_list('<ul><li>', '</li><li>', '</li></ul>') ?>
-            </div>
+       
             <?php
             };
             ?>
@@ -56,9 +54,14 @@ while (have_posts()):
 
         <div class="post">
         <?php echo wp_kses_post( get_the_content());?>  
+      
         </div>
-        
+       
     </div>
+    <div class="post-tags">
+             
+             <?php echo get_the_tag_list('<ul><li>', '</li><li>', '</li></ul>') ?>
+     </div>
 
 
 

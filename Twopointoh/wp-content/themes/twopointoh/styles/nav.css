@@ -205,32 +205,11 @@ header nav .menu .menu-item a {
   flex-direction: column;
   width: fit-content;
 }
-header nav .menu .menu-item a:after {
-  content: '';
-  height: 3px;
-  width: 0px;
-  transition: 0.8s all ease;
-}
-header nav .menu .menu-item a:hover:after {
-  content: '';
-  height: 3px;
-  width: 100%;
-  background-color: #202124;
+header nav .menu .menu-item a:hover {
+  color: #878685;
 }
 header nav .menu .current_page_item a {
-  color: #202124;
-}
-header nav .menu .current_page_item a:after {
-  content: '';
-  height: 3px;
-  width: 100%;
-  background-color: #202124;
-}
-header nav .menu .current_page_item a:hover:after:after {
-  content: '';
-  height: 3px;
-  width: 100%;
-  background-color: #202124;
+  color: #878685;
 }
 header nav .contact-btn {
   text-decoration: none;
