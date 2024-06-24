@@ -16,19 +16,22 @@
   background-color: #ede9e5;
 }
 .archive-page h1 {
-  font-family: "Poppins-semibold";
-  margin-top: 42px;
-  font-size: 106px;
+  font-family: "Poppins-bold";
+  margin: 42px auto 0 auto;
+  font-size: 148px;
+  max-width: 900px;
   line-height: 110%;
   padding-bottom: 42px;
   text-transform: uppercase;
+  text-align: center;
 }
 .archive-page .archive-intro {
   font-size: 28px;
   max-width: 720px;
+  text-align: center;
   color: #202124;
   line-height: 150%;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 .archive-page .archive-intro p {
   font-family: "Poppins-medium";
@@ -40,7 +43,11 @@
   flex-wrap: wrap;
   align-items: flex-start;
 }
+.archive-page .posts-grid .scrolling {
+  margin-top: -100px;
+}
 .archive-page .posts-grid .archive-post-link {
+  transition: all ease 0.5s;
   max-width: 49%;
   min-width: 49%;
   text-decoration: none;

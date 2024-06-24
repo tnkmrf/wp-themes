@@ -36,7 +36,7 @@ article {
   padding: 5px 16px;
   border-radius: 32px;
   transition: 0.3s all ease;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
   display: flex;
   align-items: center;
   width: fit-content;
@@ -45,10 +45,12 @@ article {
   display: flex;
 }
 .post-header .post-details h1 {
-  font-family: "Poppins-semibold";
-  margin-top: 42px;
+  font-family: "Poppins-bold";
+  margin: 42px auto 0 auto;
+  text-align: center;
   font-size: 106px;
   line-height: 110%;
+  max-width: 900px;
   margin-bottom: 42px;
 }
 .post-header .post-details .post-excerpt {
@@ -58,7 +60,9 @@ article {
   font-family: "Poppins-medium";
   color: #202124;
   line-height: 150%;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
+  text-align: center;
 }
 .post-thumb {
   width: 88%;

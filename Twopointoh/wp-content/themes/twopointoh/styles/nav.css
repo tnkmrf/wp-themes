@@ -74,7 +74,7 @@ header .opened .menu .menu-item a {
   width: 100%;
   color: #202124;
   font-size: 36px;
-  font-family: 'Poppins-medium';
+  font-family: 'Poppins-bold';
   padding: 16px 0;
   text-decoration: none;
   transition: 0.8s all ease;
@@ -102,7 +102,7 @@ header .opened .contact-btn {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  font-family: 'Poppins-medium';
+  font-family: 'Poppins-bold';
   color: #202124;
   gap: 10px;
 }
@@ -193,11 +193,12 @@ header nav .menu {
   gap: 10px;
 }
 header nav .menu .menu-item a {
+  font-size: 24px;
   padding-left: 8px;
   padding-right: 8px;
   text-decoration: none;
   color: #202124;
-  font-family: 'Poppins-medium';
+  font-family: 'Poppins-bold';
   margin: 0;
   transition: all 0.5s ease;
   display: flex;
@@ -234,10 +235,11 @@ header nav .menu .current_page_item a:hover:after:after {
 header nav .contact-btn {
   text-decoration: none;
   background-color: #FDE767;
-  padding: 3px 16px;
+  padding: 6px 16px;
   border-radius: 24px;
+  font-size: 24px;
   color: #202124;
-  font-family: 'Poppins-medium';
+  font-family: 'Poppins-bold';
   display: flex;
   align-items: center;
   gap: 6px;
