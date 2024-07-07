@@ -1,0 +1,61 @@
+.contact-page {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-color: #ede9e5;
+}
+.contact-page .contact-intro {
+  font-size: 42px;
+  text-align: center;
+  color: #202124;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+.contact-page .contact-intro p {
+  font-family: "Poppins-semibold";
+  max-width: 900px;
+  margin: auto;
+}
+.contact-page form {
+  display: block;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-page form input,
+.contact-page form textarea,
+.contact-page form button {
+  width: 100%;
+  border-radius: 32px;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border: none;
+}
+.contact-page form .form-item {
+  position: relative;
+}
+.contact-page form .form-item label {
+  position: absolute;
+  padding-left: 32px;
+  font-size: 12px;
+  color: #878685;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.contact-page form .form-item .pop {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.contact-page form .form-item input,
+.contact-page form .form-item textarea {
+  font-family: 'Poppins-medium';
+  font-size: 20px;
+  line-height: 125%;
+  outline: none;
+}
+.contact-page form button {
+  color: #fff;
+  background: #202124;
+  font-size: 24px;
+  font-family: 'Poppins-semibold';
+  cursor: pointer;
+}

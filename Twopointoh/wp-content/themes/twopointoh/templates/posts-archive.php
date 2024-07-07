@@ -25,9 +25,9 @@ get_header();
 <div class="archive-page">
     <div class="normal-width">
 
-    <div class="archive-intro">
-        <?php echo wp_kses_post( get_field('archive_intro'));?>
-    </div>
+        <div class="archive-intro">
+            <?php echo wp_kses_post( get_field('archive_intro'));?>
+        </div>
     <div class="posts-grid">
    
     <?php

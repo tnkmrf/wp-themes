@@ -6,6 +6,28 @@ function displayNav(){
   navico.classList.toggle("show-x");
 }
 
+function emailUp(){
+  let labelemail = document.getElementById("labelemail");
+  let inputemail = document.getElementById("tm-email");
+  if (inputemail.value==""){
+    labelemail.classList.remove("pop");
+  }else{
+    labelemail.classList.add("pop");
+  }
+}
+
+function textUp(){
+  let labelText = document.getElementById("labeltext");
+  let inputText = document.getElementById("tm-textarea");
+  if (inputText.value==""){
+    labelText.classList.remove("pop");
+  }else{
+    labelText.classList.add("pop");
+  }
+}
+
+
+
 
 gsap.registerPlugin(ScrollTrigger);
    
