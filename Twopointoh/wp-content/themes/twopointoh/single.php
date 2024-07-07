@@ -28,9 +28,7 @@ while (have_posts()):
           
             <h1 onclick="myFunction()"><?php esc_html_e($title)?></h1>
             <a class ="category-link" href = "<?php echo esc_url($category_link)?>"><?php esc_html_e($category_name)?></a>
-            <div class="post-excerpt">
-            <?php echo wp_kses_post( get_the_excerpt());?>
-            </div>
+          
             <?php if (!empty(get_the_tag_list())){
             ?>
        
@@ -48,7 +46,12 @@ while (have_posts()):
         <?php
         };?>
     </div>
-   
+    <div class="excerpt-container">
+        <div class="post-excerpt">
+                <?php echo wp_kses_post( get_the_excerpt());?>
+        </div>
+    </div>
+
 
     <div class="post-content">
 
@@ -58,10 +61,7 @@ while (have_posts()):
         </div>
        
     </div>
-    <div class="post-tags">
-             
-             <?php echo get_the_tag_list('<ul><li>', '</li><li>', '</li></ul>') ?>
-     </div>
+
 
 
 

@@ -1,38 +1,36 @@
 @import url('utils.less');
 
 .archive-page{
-    padding-top: 200px;
+    padding-top: 240px;
     padding-bottom: 100px;
     background-color: #ede9e5;
 
     h1{
         font-family: "Poppins-bold";
             margin: 42px auto 0 auto;
-            font-size: 148px;
-            max-width: 900px;
+            font-size: 20px;
             line-height: 110%;
             padding-bottom: 42px;
             text-transform: uppercase;
-            text-align: center;
         
     }
 
     .archive-intro{
-        font-size: 28px;
-        max-width: 720px;
+        font-size: 42px;
         text-align: center;
         p{
-            font-family: "Poppins-medium";
+            font-family: "Poppins-semibold";
+            max-width: 960px;
+            margin: auto;
         }
-      
         color: #202124;
         line-height: 150%;
-        margin: 0 auto 50px auto;
+     
         
     }
 
     .posts-grid{
-        margin-top: 100px;
+        margin-top: 160px;
         display: flex;
         justify-content: space-between;
 
@@ -44,7 +42,6 @@
         .archive-post-link{
             transition: all ease 0.5s;
             &:hover{
-                //cursor: url(../resources/img/icons/outbound.svg),pointer;
                  .thumb-container .thumb-category{
                  
                   opacity: 1;
@@ -60,7 +57,10 @@
             min-width: 49%;
             text-decoration: none;
             .thumb-container{
-              
+                &:hover{
+                   // cursor: url(../resources/img/icons/proceed.svg),pointer;
+    
+                }
                 position: relative;
                 border-radius: 24px;
                 display: flex;
