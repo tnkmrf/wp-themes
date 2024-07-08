@@ -104,11 +104,38 @@ article {
   max-width: 800px;
   width: 88%;
 }
+.rec-slider {
+  padding-bottom: 160px;
+}
 .rec-slider h2 {
   font-size: 100px;
   font-family: 'Poppins-semibold';
   text-align: center;
-  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.rec-slider .swiper {
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  display: flex;
+}
+.rec-slider .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+}
+.rec-slider .swiper .swiper-slide .rel-thumb-container {
+  border-radius: 24px;
+  display: flex;
+}
+.rec-slider .swiper .swiper-slide .rel-thumb-container img {
+  width: 100%;
+  aspect-ratio: 16/10;
 }
 .post-tags ul {
   margin-top: 60px;

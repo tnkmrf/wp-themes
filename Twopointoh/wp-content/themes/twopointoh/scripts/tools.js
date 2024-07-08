@@ -59,6 +59,16 @@ ScrollTrigger.create({
   }
 });
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  effect: "cards",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 
 
  

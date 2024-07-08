@@ -70,7 +70,7 @@ while (have_posts()):
         'order'         => 'desc',
         'order_by'      =>  'date',
         'category_name' => $category_name,
-        'post__not_in'  => [get_the_ID()]
+       // 'post__not_in'  => [get_the_ID()]
     );
 
 $rec_articles = new WP_Query( $rec_article_args);
@@ -78,32 +78,38 @@ if($rec_articles){
     ?>
 
 <div class="rec-slider">
-<div class="normal-width">
-<h2>Related work</h2>
-</div>
+    <div class="normal-width">
+    <h2>Related work</h2>
+    </div>
 
-<?php
-foreach ($rec_articles -> posts as $article):
-    $category = get_the_category($article);
-    $category_name = $category[0]->name;
-    $main_colour = get_field('post_main_colour',$article);
-    ?>
-    <a class ="archive-post-link" href="<?php echo esc_url(get_the_permalink( $article))?>">
-        <div class="thumb-container">
-        <img src="<?php echo esc_url(get_the_post_thumbnail_url( $article));?>" alt="">
-        <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span></div>
+<div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <?php
+        foreach ($rec_articles -> posts as $article):
+        $category = get_the_category($article);
+        $category_name = $category[0]->name;
+        $main_colour = get_field('post_main_colour',$article);
+        ?>
+        <a class ="archive-post-link swiper-slide" href="<?php echo esc_url(get_the_permalink( $article))?>">
+            <div class="rel-thumb-container">
+            <img src="<?php echo esc_url(get_the_post_thumbnail_url( $article));?>" alt="">
+            </div>
+        
+        </a>
+        <?php
+        endforeach;
+    }
+        ?>
         </div>
-        <div class="thumb-info">  
-            <div class="thumb-name"><?php esc_html_e(get_the_title( $article))?></div>
-        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 
-    </a>
-    <?php
-    endforeach;
-}
-    ?>
     </div>
     </article>
+
+ 
 <?php
 endwhile;
+
 get_footer();
+?>
