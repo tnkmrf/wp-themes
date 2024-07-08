@@ -24,8 +24,8 @@ get_header();
 ?>
 <div class="archive-page">
     <div class="normal-width">
-
         <div class="archive-intro">
+            <h1><?php echo esc_html(get_the_title())?></h1>
             <?php echo wp_kses_post( get_field('archive_intro'));?>
         </div>
     <div class="posts-grid">

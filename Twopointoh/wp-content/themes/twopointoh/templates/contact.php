@@ -14,6 +14,7 @@ get_header();
 <div class="contact-page">
     <div class="normal-width">
         <div class="contact-intro">
+        <h1><?php echo esc_html(get_the_title())?></h1>
         <?php echo wp_kses_post( get_field('contact_intro'));?>
         </div>
         <form action="">
