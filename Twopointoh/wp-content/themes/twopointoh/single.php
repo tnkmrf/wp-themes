@@ -90,11 +90,11 @@ if($rec_articles){
         $category_name = $category[0]->name;
         $main_colour = get_field('post_main_colour',$article);
         ?>
-        <a class ="archive-post-link swiper-slide" href="<?php echo esc_url(get_the_permalink( $article))?>">
+        <a class ="swiper-slide" href="<?php echo esc_url(get_the_permalink( $article))?>" style="background:<?php echo esc_html($main_colour)?>">
             <div class="rel-thumb-container">
             <img src="<?php echo esc_url(get_the_post_thumbnail_url( $article));?>" alt="">
-            </div>
-        
+            </div> 
+            <div class="rec-thumb-name"><?php esc_html_e(get_the_title( $article))?></div>
         </a>
         <?php
         endforeach;

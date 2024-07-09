@@ -145,22 +145,31 @@ article {
 }
 .rec-slider .recSwiper .swiper-slide {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   border-radius: 24px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
   width: 100%;
   position: relative;
+  padding: 24px;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 .rec-slider .recSwiper .swiper-slide .rel-thumb-container {
   border-radius: 24px;
+  overflow: hidden;
   display: flex;
 }
 .rec-slider .recSwiper .swiper-slide .rel-thumb-container img {
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
+}
+.rec-slider .recSwiper .swiper-slide .rec-thumb-name {
+  margin-top: 18px;
+  color: #202124;
+  font-family: 'Poppins-bold';
+  font-size: 30px;
 }
 .post-tags ul {
   margin-top: 60px;
