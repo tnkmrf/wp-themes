@@ -113,27 +113,52 @@ article {
   text-align: center;
   margin-bottom: 100px;
 }
-.rec-slider .swiper {
-  width: 100%;
+.rec-slider .recSwiper {
+  width: 88%;
   height: 100%;
   max-width: 900px;
   display: flex;
+  flex-direction: column;
+  margin: auto;
 }
-.rec-slider .swiper .swiper-slide {
+.rec-slider .recSwiper .swiper-button-next,
+.rec-slider .recSwiper .swiper-button-prev {
+  aspect-ratio: 1/1;
+  color: #fff;
+  width: fit-content;
+  padding: 5px;
+}
+.rec-slider .recSwiper .rec-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.rec-slider .recSwiper .rec-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.rec-slider .recSwiper .rec-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #202124;
+}
+.rec-slider .recSwiper .swiper-wrapper {
+  min-width: 100%;
+}
+.rec-slider .recSwiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 18px;
+  border-radius: 24px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
   width: 100%;
+  position: relative;
 }
-.rec-slider .swiper .swiper-slide .rel-thumb-container {
+.rec-slider .recSwiper .swiper-slide .rel-thumb-container {
   border-radius: 24px;
   display: flex;
 }
-.rec-slider .swiper .swiper-slide .rel-thumb-container img {
+.rec-slider .recSwiper .swiper-slide .rel-thumb-container img {
   width: 100%;
   aspect-ratio: 16/10;
 }

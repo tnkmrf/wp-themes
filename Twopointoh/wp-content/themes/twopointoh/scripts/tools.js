@@ -59,12 +59,17 @@ ScrollTrigger.create({
   }
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".recSwiper", {
   slidesPerView: "auto",
   effect: "cards",
   spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".rec-swiper-pagination",
     clickable: true,
   },
 });

@@ -36,14 +36,14 @@ get_header();
         $category_name = $category[0]->name;
         $main_colour = get_field('post_main_colour',$article);
         ?>
-        <a class ="archive-post-link" href="<?php echo esc_url(get_the_permalink( $article))?>">
+        <a class ="archive-post-link" href="<?php echo esc_url(get_the_permalink( $article))?>" style="background:<?php echo esc_html($main_colour)?>">
             <div class="thumb-container">
             <img src="<?php echo esc_url(get_the_post_thumbnail_url( $article));?>" alt="">
-            <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span></div>
             </div>
-            <div class="thumb-info">  
+          
                 <div class="thumb-name"><?php esc_html_e(get_the_title( $article))?></div>
-            </div>
+                <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span></div>
+            
    
         </a>
         <?php

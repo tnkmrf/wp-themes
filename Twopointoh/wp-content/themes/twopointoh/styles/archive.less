@@ -17,10 +17,10 @@
             width: 100%;
             line-height: 100%;
             font-family: 'Poppins-bold';
-            opacity: 0.4;
+           
             text-align: center;
             font-size: 140px;
-            color: #d8ccb5;
+            color: #1c1c1c14;
             z-index: 0;
         }
         p{
@@ -42,28 +42,37 @@
         .scrolling{
             margin-top: -100px;
         }
+
+     
         .archive-post-link{
+            overflow: hidden;
+            border-radius: 24px;
+            padding: 18px;
             transition: all ease 0.5s;
+            box-sizing: border-box;
+            position: relative;
             &:hover{
                 .thumb-container{
+                    transform: translateY(-100px) ;
+                    opacity: 0;
                     img{
                         filter: blur(4px);
-                        transform: scale(1.5);
                     }
-                
                 }
-                 .thumb-container .thumb-category{
+                .thumb-category{
                   opacity: 1;
+                  height: 100%;
                 }
 
+            
             }
-            &:nth-child(2){
-                margin-top: 100px;
+            &:nth-child(2n){
+                margin-top: 100px;  
             }
 
 
             max-width: 49%;
-            min-width: 30%;
+            min-width: 49%;
             text-decoration: none;
             .thumb-container{
                 position: relative;
@@ -71,53 +80,20 @@
                 display: flex;
                 width: 100%;
                 overflow: hidden;
-                margin-bottom: 24px;
-             
+                margin: auto;
+                transition: all 0.5s ease;
                 img{
                     transition: all ease 0.8s;    
                     width: 100%;   
-                    aspect-ratio: 16/11;
+                    aspect-ratio: 16/9;
                
                 }
-                .thumb-category{
-                    position: absolute;  
-                    padding-top: 100%;
-                    bottom:0;
-                    color: #fff;
-                    display: flex;
-                    flex-direction: column;
-                    transition: all ease 0.5s;
-                    background: rgb(255,255,255);
-                    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(32,33,36,1) 100%);
-                    width: 100%;
-                    opacity: 0;
-                    .thumb-cat{
-                        font-size: 24px;
-                        font-family: 'Poppins-bold';
-                        padding: 0 24px ;
-                       
-                        color: #878685;
-                       
-                      
-                        width: fit-content;
-                    }
-                    .thumb-excerpt{
-                        text-transform: none;
-                        padding: 24px;
-                        font-size: 20px;
-                    }
-                }   
-
-             
             }
 
-            .thumb-category{
-                text-transform: uppercase;
-                color:  #878685;
-            }
             .thumb-name{
+                position: relative;
                 font-size: 32px;
-                
+                padding-top: 18px;
                 display: flex;
                 align-items: center;
                 color: #202124;
@@ -125,6 +101,34 @@
                 gap: 16px;
             
             }
+
+            .thumb-category{     
+                position: absolute;      
+                bottom: -24px;   
+                padding-top: 100%;
+                color: #202124;
+                display: flex;
+                flex-direction: column;
+                transition: all ease 0.5s;
+                width: 100%;
+                opacity: 0;
+                height: 0px;
+                .thumb-cat{
+                    font-size: 24px;
+                    font-family: 'Poppins-bold';
+                    color: #202124;
+                    width: fit-content;
+                    border-radius: 24px;
+                    padding: 8px 16px;
+                    background-color: #ffffff85;
+                    margin-bottom: 32px;
+                }
+                .thumb-excerpt{
+                    text-transform: none;
+                    font-size: 20px;
+                    padding-right: 18px;
+                }
+            }   
         }
     }
 }

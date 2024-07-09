@@ -82,7 +82,7 @@ if($rec_articles){
     <h2>Related work</h2>
     </div>
 
-<div class="swiper mySwiper">
+<div class="recSwiper">
         <div class="swiper-wrapper">
         <?php
         foreach ($rec_articles -> posts as $article):
@@ -101,7 +101,9 @@ if($rec_articles){
     }
         ?>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="rec-swiper-pagination"></div>
     </div>
 
     </div>
