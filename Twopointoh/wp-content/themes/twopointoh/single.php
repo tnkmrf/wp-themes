@@ -70,7 +70,7 @@ while (have_posts()):
         'order'         => 'desc',
         'order_by'      =>  'date',
         'category_name' => $category_name,
-       // 'post__not_in'  => [get_the_ID()]
+        'post__not_in'  => [get_the_ID()]
     );
 
 $rec_articles = new WP_Query( $rec_article_args);
