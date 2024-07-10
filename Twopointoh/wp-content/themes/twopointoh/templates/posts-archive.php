@@ -42,9 +42,7 @@ get_header();
             </div>
           
                 <div class="thumb-name"><?php esc_html_e(get_the_title( $article))?></div>
-                <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span></div>
-            
-   
+                <div class="thumb-category"><span class="thumb-cat"><?php esc_html_e($category_name)?></span><span class="thumb-excerpt"><?php echo wp_kses_post(get_the_excerpt($article))?></span><span class ="read-more">Read More<span><img src="<?php echo get_template_directory_uri()?>/resources/img/icons/view-arrow.svg" alt="logo"></span></span></div>
         </a>
         <?php
     endforeach;
