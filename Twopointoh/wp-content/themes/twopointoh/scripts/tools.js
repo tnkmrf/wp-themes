@@ -61,12 +61,10 @@ ScrollTrigger.create({
 
 var swiper = new Swiper(".recSwiper", {
   slidesPerView: "auto",
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 10,
-    slideShadows: true,
-  },
-  spaceBetween: -10,
+
+  slideToClickedSlide: true,
+
+  spaceBetween: 20,
 
   navigation: {
     nextEl: ".swiper-button-next",
