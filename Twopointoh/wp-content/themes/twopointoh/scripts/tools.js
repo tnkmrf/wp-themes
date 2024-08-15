@@ -60,12 +60,13 @@ ScrollTrigger.create({
 });
 
 var swiper = new Swiper(".recSwiper", {
-  slidesPerView: "auto",
-
+  slidesPerView: 1,
+  grabCursor: true,
+  parallax: true,
+  resistance: false,
+  spaceBetween: 10,
   slideToClickedSlide: true,
-
-  spaceBetween: 20,
-
+  
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -73,6 +74,20 @@ var swiper = new Swiper(".recSwiper", {
   pagination: {
     el: ".rec-swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    1080: {
+      spaceBetween: 20,
+      slidesPerView: 2.5
+    },
+    820: {
+      spaceBetween: 20,
+      slidesPerView: 1.5
+    },
+    540: {
+      spaceBetween: 20,
+      slidesPerView: 1
+    },
   },
 });
 

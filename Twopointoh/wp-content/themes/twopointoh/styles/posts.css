@@ -59,13 +59,13 @@ article {
 }
 .post-excerpt {
   padding-top: 40px;
-  font-size: 42px;
+  font-size: 36px;
   font-family: "Poppins-semibold";
   color: #202124;
   line-height: 150%;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 .post-thumb {
   width: 88%;
@@ -113,12 +113,11 @@ article {
   font-size: 100px;
   font-family: 'Poppins-semibold';
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .rec-slider .recSwiper {
   width: 88%;
   height: 100%;
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -139,6 +138,7 @@ article {
 .rec-slider .recSwiper .rec-swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
+  border-radius: 50%;
 }
 .rec-slider .recSwiper .rec-swiper-pagination .swiper-pagination-bullet-active {
   background-color: #202124;
@@ -149,7 +149,7 @@ article {
 .rec-slider .recSwiper .swiper-slide {
   display: flex;
   flex-direction: column;
-  border-radius: 24px;
+  border-radius: 16px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
@@ -167,7 +167,7 @@ article {
   transform: rotate(1deg);
 }
 .rec-slider .recSwiper .swiper-slide .rel-thumb-container {
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
 }
@@ -179,7 +179,7 @@ article {
   margin-top: 18px;
   color: #202124;
   font-family: 'Poppins-bold';
-  font-size: 30px;
+  font-size: 24px;
 }
 .post-tags ul {
   margin-top: 60px;
