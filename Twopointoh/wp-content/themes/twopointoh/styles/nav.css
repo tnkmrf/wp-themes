@@ -238,5 +238,5 @@ header nav .contact-btn span img {
   transition: 0.8s all ease;
 }
 header nav .contact-btn:hover span img {
-  transform: translateX(16px);
+  transform: translateX(14px);
 }
